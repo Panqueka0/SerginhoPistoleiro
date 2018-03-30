@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const serginho = new Discord.Client();
 
 serginho.on('guildMemberAdd', member => {
-   member.guild.channels.get('400751507152175107').send('@'+member.user.username+'Ei seu bunda mole');
+   member.guild.channels.get('414151682264662016').send('@'+member.user.username+' Ei seu bunda mole');
    
 });
 
@@ -12,8 +12,7 @@ serginho.on('message', message => {
     }
     else if(message.content === 'oSim'){
         message.reply('otimo, cagão.');
-        const usuario = message.member;
-        usuario.addRole('Hired Gun');
+        message.member.addRole('429160036846272527');
     }
     else if(message.content === 'oNão'){
         message.reply('um momento amigo. se quiser entrar depois escreva oIn');
