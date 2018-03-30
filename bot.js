@@ -2,8 +2,7 @@ const Discord = require('discord.js');
 const serginho = new Discord.Client();
 
 serginho.on('guildMemberAdd', member => {
-   var idUser = client.users.get("name", member.user.username).id;
-   member.guild.channels.get('400751507152175107').send('@'+idUser+'Ei seu bunda mole');
+   member.guild.channels.get('400751507152175107').send('@'+member.user.username+'Ei seu bunda mole');
    
 });
 
