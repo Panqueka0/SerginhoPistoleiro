@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    message.channel.send('Ei seus bunda mole');
+    
 });
 
 // THIS  MUST  BE  THIS  WAY
