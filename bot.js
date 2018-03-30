@@ -1,12 +1,8 @@
 const Discord = require('discord.js');
 const serginho = new Discord.Client();
 
-serginho.on('ready', () => {
-    console.log('to pronto');
-});
-
 serginho.on('guildMemberAdd', member => {
-   member.send("Ei seu bunda mole!");
+   member.send('Ei seu bunda mole!');
 });
 
 serginho.on('message', message => {
