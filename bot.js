@@ -2,7 +2,8 @@ const Discord = require('discord.js');
 const serginho = new Discord.Client();
 
 serginho.on('guildMemberAdd', member => {
-   member.send('Ei seu bunda mole!');
+   member.guild.channels.get('400751507152175107').send('Ei '+ member.user.username + 'seu bunda mole');
+   
 });
 
 serginho.on('message', message => {
