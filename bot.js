@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     //console.log(`(${message.server.name} / ${message.channel.name}) ${message.author.name}: ${message.content}`);
-    setTimeout(message.reply('o que carregas neste caixão?'),60000);
+    message.reply('o que carregas neste caixão?');
 });
 
 // THIS  MUST  BE  THIS  WAY
