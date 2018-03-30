@@ -15,12 +15,12 @@ serginho.on('message', message => {
     if (message.content === 'falou comigo?' || message.content === 'falou comigo ?') {
         message.reply('sim gracinha, quer entrar na minha gangue? (oSim/oNão)');
     }
-    else if(message.content === 'oSim){
+    else if(message.content === 'oSim'){
         message.reply('otimo, cagão.');
         const user = message.member;
         user.addRole('Hired Gun');
     }
-    else if(message.content === 'oNão){
+    else if(message.content === 'oNão'){
         message.reply('um momento amigo. se quiser entrar depois escreva oIn');
     }
 });
