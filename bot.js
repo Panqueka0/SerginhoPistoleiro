@@ -6,9 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
-  	}
+    message.channel.send('Ei seus bunda mole');
 });
 
 // THIS  MUST  BE  THIS  WAY
