@@ -7,18 +7,14 @@ serginho.on('guildMemberAdd', member => {
 });
 
 serginho.on('message', message => {
-   if(message.member.roles.has('429159637556920320')|| 
-      message.member.roles.has('429163812512333826')|| 
-      message.member.roles.has('429159637556920320')){
-      message.reply('porco safado');
-   }
-   /*if (message.isMentioned(serginho.user)){
-       recrutar(message);
-   }
+   /*if (message.author.bot) return;
    else{
       recrutar(message);
    }*/
-   //recrutar(message);
+   
+   if (message.isMentioned(serginho.user)){
+       message.reply('true');
+   }
 });
 
 function recrutar(message){
@@ -27,8 +23,15 @@ function recrutar(message){
       message.reply('sim gracinha, quer entrar na minha gangue? (oSim/oNão)');
    }
    else if(message.content === 'oSim'){
-      message.reply('otimo, cagão.');
-      usuario.addRole('429160036846272527');
+      if(message.member.roles.has('429157255720730624')|| 
+      message.member.roles.has('429163812512333826')|| 
+      message.member.roles.has('429159637556920320')){
+         message.reply('um momento amigo, o que levas neste casaco? um distintivo?');
+      }
+      else{
+         message.reply('otimo, cagão.');
+         usuario.addRole('429160036846272527');
+      }      
    }
    else if(message.content === 'oNão'){
       message.reply('acabei de me aborrecer. (oSim quando quiser entrar na gangue)');
