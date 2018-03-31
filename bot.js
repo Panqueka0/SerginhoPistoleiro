@@ -25,7 +25,10 @@ function recrutar(message){
       usuario.addRole('429160036846272527');
    }
    else if(message.content === 'oNão'){
-      message.reply('um momento amigo, acabei de me aborrecer. (oSim quando quiser entrar na gangue)');
+      message.reply('acabei de me aborrecer. (oSim quando quiser entrar na gangue)');
+   }
+   else{
+      message.reply('um momento amigo, quer entrar na minha gangue? (oSim/oNão)');
    }
 }
 
