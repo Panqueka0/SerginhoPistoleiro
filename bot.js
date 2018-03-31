@@ -13,7 +13,7 @@ serginho.on('message', message => {
    else{
       recrutar(message);
    }*/
-   recrutar(message);
+   //recrutar(message);
 });
 
 function recrutar(message){
