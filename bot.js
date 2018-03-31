@@ -7,15 +7,15 @@ serginho.on('guildMemberAdd', member => {
 });
 
 serginho.on('message', message => {
-   if (message.author.bot) return;
+   if (message.author.bot){
+      return;
+   }
    else if (message.isMentioned(serginho.user)){
-       message.reply('true');
+       recrutar(message);
    }
    else{
-      recrutar(message);
-   }
-   
-   
+      return;
+   }   
 });
 
 function recrutar(message){
