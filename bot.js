@@ -15,7 +15,7 @@ serginho.on('message', message => {
    }
 });
 
-function recrutar(message, usuario){
+function recrutar(message){
    var usuario=message.member;
    if (message.content === 'falou comigo?' || message.content === 'falou comigo ?') {
       message.reply('sim gracinha, quer entrar na minha gangue? (oSim/oNão)');
