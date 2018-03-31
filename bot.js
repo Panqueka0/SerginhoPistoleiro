@@ -7,15 +7,10 @@ serginho.on('guildMemberAdd', member => {
 });
 
 serginho.on('message', message => {
-   if (message.author.bot){
-      return;
-   }
-   else if (message.isMentioned(serginho.user)){
+   if (message.author.bot)return;
+   if (message.isMentioned(serginho.user)){
        recrutar(message);
-   }
-   else{
-      return;
-   }   
+   }  
 });
 
 function recrutar(message){
@@ -25,8 +20,9 @@ function recrutar(message){
    }
    else if(message.content === 'oSim'){
       if(message.member.roles.has('429157255720730624')|| 
-      message.member.roles.has('429163812512333826')|| 
-      message.member.roles.has('429159637556920320')){
+         message.member.roles.has('429163812512333826')|| 
+         message.member.roles.has('429159637556920320')){
+         
          message.reply('um momento amigo, o que levas neste casaco? um distintivo?');
       }
       else{
