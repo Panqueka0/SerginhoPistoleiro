@@ -7,17 +7,27 @@ serginho.on('guildMemberAdd', member => {
 });
 
 serginho.on('message', message => {
-    if (message.content === 'falou comigo?' || message.content === 'falou comigo ?') {
-        message.reply('sim gracinha, quer entrar na minha gangue? (oSim/oNão)');
-    }
-    else if(message.content === 'oSim'){
-        message.reply('otimo, cagão.');
-        message.member.addRole('429160036846272527');
-    }
-    else if(message.content === 'oNão'){
-        message.reply('um momento amigo, acabei de me aborrecer. (oSim quando quiser entrar na gangue)');
-    }
+   if (message.isMentioned(serginho.user)){
+       recrutar(message);
+   }
+   else{
+      recrutar(message);
+   }
 });
+
+function recrutar(message, usuario){
+   var usuario=message.member;
+   if (message.content === 'falou comigo?' || message.content === 'falou comigo ?') {
+      message.reply('sim gracinha, quer entrar na minha gangue? (oSim/oNão)');
+   }
+   else if(message.content === 'oSim'){
+      message.reply('otimo, cagão.');
+      usuario.addRole('429160036846272527');
+   }
+   else if(message.content === 'oNão'){
+      message.reply('um momento amigo, acabei de me aborrecer. (oSim quando quiser entrar na gangue)');
+   }
+}
 
 // THIS  MUST  BE  THIS  WAY
 serginho.login(process.env.BOT_TOKEN);
