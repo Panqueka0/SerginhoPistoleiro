@@ -37,9 +37,9 @@ function recrutar(message){
    else if(message.content === 'oNão'){
       message.reply('acabei de me aborrecer. (oSim quando quiser entrar na gangue)');
    }
-   else{
+   /*else{
       message.reply('um momento amigo, quer entrar na minha gangue? (oSim/oNão)');
-   }
+   }*/
 }
 
 // THIS  MUST  BE  THIS  WAY
