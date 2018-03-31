@@ -7,12 +7,13 @@ serginho.on('guildMemberAdd', member => {
 });
 
 serginho.on('message', message => {
-   if (message.isMentioned(serginho.user)){
+   /*if (message.isMentioned(serginho.user)){
        recrutar(message);
    }
    else{
       recrutar(message);
-   }
+   }*/
+   recrutar(message);
 });
 
 function recrutar(message){
