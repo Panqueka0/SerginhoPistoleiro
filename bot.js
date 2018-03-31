@@ -29,9 +29,9 @@ serginho.on('message', message => {
    else if(message.content === 'oNão'){
       message.reply('acabei de me aborrecer. (oSim quando quiser entrar na gangue)');
    }
-   else{
+   /*else{
       message.reply('um momento amigo, quer entrar na minha gangue? (oSim/oNão)');
-   }
+   }*/
 });
 
 serginho.login(process.env.BOT_TOKEN);
