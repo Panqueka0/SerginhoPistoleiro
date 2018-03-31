@@ -7,6 +7,11 @@ serginho.on('guildMemberAdd', member => {
 });
 
 serginho.on('message', message => {
+   if(message.member.roles.has('429159637556920320')|| 
+      message.member.roles.has('429163812512333826')|| 
+      message.member.roles.has('429159637556920320')){
+      message.reply('porco safado');
+   }
    /*if (message.isMentioned(serginho.user)){
        recrutar(message);
    }
